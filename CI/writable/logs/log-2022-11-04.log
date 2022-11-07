@@ -1,0 +1,138 @@
+ERROR - 2022-11-04 00:57:28 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /var/www/html/CI/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/CI/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /var/www/html/CI/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/html/CI/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/CI/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/CI/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/CI/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/CI/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/CI/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /var/www/html/CI/system/CodeIgniter.php(907): App\Controllers\News->index()
+#9 /var/www/html/CI/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/CI/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/CI/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/CI/system/Commands/Server/rewrite.php(43): require_once('...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in /var/www/html/CI/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/CI/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/html/CI/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/CI/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/html/CI/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/CI/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#5 /var/www/html/CI/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /var/www/html/CI/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /var/www/html/CI/system/CodeIgniter.php(907): App\Controllers\News->index()
+#8 /var/www/html/CI/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/CI/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/CI/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/CI/system/Commands/Server/rewrite.php(43): require_once('...')
+#12 {main}
+CRITICAL - 2022-11-04 00:57:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-11-04 00:58:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /var/www/html/CI/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/CI/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /var/www/html/CI/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/html/CI/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/CI/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/CI/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/CI/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/CI/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/CI/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /var/www/html/CI/system/CodeIgniter.php(907): App\Controllers\News->index()
+#9 /var/www/html/CI/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/CI/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/CI/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/CI/system/Commands/Server/rewrite.php(43): require_once('...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in /var/www/html/CI/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/CI/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/html/CI/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/CI/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/html/CI/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/CI/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#5 /var/www/html/CI/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /var/www/html/CI/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /var/www/html/CI/system/CodeIgniter.php(907): App\Controllers\News->index()
+#8 /var/www/html/CI/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/CI/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/CI/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/CI/system/Commands/Server/rewrite.php(43): require_once('...')
+#12 {main}
+CRITICAL - 2022-11-04 00:58:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-11-04 01:02:28 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /var/www/html/CI/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/CI/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /var/www/html/CI/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/html/CI/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/CI/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/CI/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/CI/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/CI/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/CI/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /var/www/html/CI/system/CodeIgniter.php(907): App\Controllers\News->index()
+#9 /var/www/html/CI/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/CI/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/CI/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/CI/system/Commands/Server/rewrite.php(43): require_once('...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in /var/www/html/CI/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/CI/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/html/CI/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/CI/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/html/CI/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/CI/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#5 /var/www/html/CI/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /var/www/html/CI/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /var/www/html/CI/system/CodeIgniter.php(907): App\Controllers\News->index()
+#8 /var/www/html/CI/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/CI/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/CI/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/CI/system/Commands/Server/rewrite.php(43): require_once('...')
+#12 {main}
+CRITICAL - 2022-11-04 01:02:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

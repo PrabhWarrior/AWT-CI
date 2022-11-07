@@ -1,0 +1,16 @@
+CRITICAL - 2022-11-07 07:51:03 --> Undefined property: Config\App::$indexPage
+in SYSTEMPATH/Helpers/url_helper.php on line 51.
+ 1 SYSTEMPATH/Helpers/url_helper.php(51): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Helpers/url_helper.php(133): _get_uri()
+ 3 SYSTEMPATH/CodeIgniter.php(510): current_url()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-07 07:51:08 --> Undefined property: Config\App::$indexPage
+in SYSTEMPATH/Helpers/url_helper.php on line 51.
+ 1 SYSTEMPATH/Helpers/url_helper.php(51): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Helpers/url_helper.php(133): _get_uri()
+ 3 SYSTEMPATH/CodeIgniter.php(510): current_url()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
